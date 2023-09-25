@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Product Search and Pagination</title>
+    <meta name="author" content="PANKAJ SAHU">
+    <meta name="keywords" content="Web Application, Product Search, Product Pagination, Filtering, Responsive Design, HTML, CSS, JavaScript, API Integration, User Interface, User Experience, Product Display, Search Functionality, Pagination Controls, Filter Sliders, Responsive Layout.">
+    <meta name="description" content="This web application allows users to search for Beer products based on keywords, filter products by price and ratings, and paginate through the results. It provides a user-friendly interface for browsing and finding products.">
+    <meta name="og:title" content="Netflix India – Watch TV Shows Online, Watch Movies Online">
+    <meta name="og:description" content="This web application allows users to search for Beer products based on keywords, filter products by price and ratings, and paginate through the results. It provides a user-friendly interface for browsing and finding products.">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/135128502?s=48&v=4" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h3>Beer Product Search and Pagination</h3>
+        </header>
+
+        <form class="search-container">
+            <input type="text" id="search-input" placeholder="Search products">
+            <div class="bt-divi">
+                <button id="search-button">Search</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </form>
+
+        <!-- Add filter sliders and options here -->
+        <div class="filter-container">
+            <label for="price-slider">Price (Max): <span id="price-value">1300</span></label>
+            <input type="range" id="price-slider" min="1000" max="1300" step="1" value="1300">
+            <label for="ratings-slider">Ratings (Min): <span id="ratings-value">13</span></label>
+            <input type="range" id="ratings-slider" min="4" max="13" step="0.1" value="13">
+        </div>
+
+        <ul class="pagination" id="pagination"></ul>
+        <div class="product-container" id="product-container">
+            <!-- Product cards will be displayed here -->
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>

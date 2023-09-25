@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0a1f44;
+  background-color: rgb(238, 238, 238);
+}
+
+header {
+  background-color: #28a745 !important;
+  color: #fff !important;
+  border-radius: 10px;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 0rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+form input {
+  width: 50ch;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: red;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: #ffae00 !important;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: black;
+  padding: 0.5rem 1rem;
+  margin: 0rem 0.6rem;
+
+  transition: all 0.1s ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: red;
+  border: 2px solid red;
+}
+
+/* Style for filter container */
+.filter-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for sliders */
+input[type="range"] {
+  width: 40%;
+  height: 20px;
+  margin: 5px 0;
+  outline: none;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style for slider labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.pagination li {
+  background-color: #fff !important;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  /* transition: all 0.1s ease-in-out; */
+}
+
+.pagination li:hover {
+  cursor: pointer;
+  /* transform: scale(1.1); */
+  color: red;
+  border: 2px solid red;
+}
+
+#product-container {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#product-container div {
+  flex: 1;
+  /* Equal width for all cards */
+  max-width: calc(33.33% - 20px);
+  /* Adjust the width as needed with margins */
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff !important;
+  border-radius: 10px;
+  box-shadow: 3px 10px 20px #757676;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  /* filter: drop-shadow(4px 4px 10px 10px black); */
+}
+
+.product-container h3 {
+  color: #28a745;
+  padding: 5px;
+  margin: 5px;
+}
+
+.product-container h5 {
+  color: #ff006a;
+  padding: 2px;
+  margin: 2px;
+  font-weight: 800;
+}
+
+.product-container h4 {
+  color: #0a1f44;
+  padding: 3px;
+  margin: 3px;
+  font-weight: 800;
+}
+
+@media (max-width: 540px) {
+  form input {
+    width: 30ch;
+  }
+
+  header {
+    font-size: 15px;
+  }
+
+  #product-container div {
+    flex: 1;
+    max-width: calc(60.33% - 10px);
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 778px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-container h3 {
+    padding: 3px;
+    margin: 3px;
+    font-size: 18px;
+  }
+}
